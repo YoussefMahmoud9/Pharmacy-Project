@@ -1,225 +1,72 @@
 # 💊 Pharmacy Management System
 
-A database-driven Pharmacy Management System developed using **Microsoft SQL Server / T-SQL** with an application layer for managing pharmacy products and inventory-related information.
-
----
-
-## 📌 Project Overview
-
 The Pharmacy Management System is designed to support the management of pharmacy products and their associated inventory information.
 
 The project combines database design and application development to provide a structured system for storing and working with pharmacy data.
 
-The repository contains:
 
-* SQL database scripts
-* Application files
-* UI resources/screenshots
-* Project documentation
-* Database project materials
 
----
+# Pharmacy Management System
 
-## 🎯 Objectives
+A **C# Windows Forms** application developed for managing pharmacy-related operations and data.
 
-The main objectives of the project are to:
+## Project Overview
 
-* Organize pharmacy product information
-* Maintain product prices
-* Track product quantities
-* Track sold quantities
-* Associate products with locations
-* Store pharmacy information in a relational database
-* Provide an application interface for interacting with the database
+The system provides a graphical interface for managing different parts of a pharmacy, with dedicated forms for customers, orders, stores, workers, and other operations.
 
----
+The project also includes database components for storing and managing the system's data.
 
-## 🗄️ Database
+## Main Features
 
-The SQL database contains a product table:
+* Customer management
+* Order management
+* Store management
+* Worker management
+* Data management through a graphical interface
+* Database integration
 
-```sql
-Tbl_products
-```
+## Technologies
 
-The table defines:
-
-| Column        | Type         | Description                |
-| ------------- | ------------ | -------------------------- |
-| `productName` | NVARCHAR(50) | Product name / primary key |
-| `price`       | INT          | Product price              |
-| `location`    | NVARCHAR(50) | Product location           |
-| `quantity`    | INT          | Available quantity         |
-| `soled`       | INT          | Sold quantity              |
-
-The product name is defined as the primary key.
-
----
-
-## 🧱 Database Schema
-
-```text
-┌─────────────────────────────┐
-│        Tbl_products         │
-├─────────────────────────────┤
-│ PK productName NVARCHAR(50) │
-│    price INT                │
-│    location NVARCHAR(50)   │
-│    quantity INT             │
-│    soled INT                │
-└─────────────────────────────┘
-```
-
----
-
-## 🛠️ Technologies
-
+* C#
+* .NET / Windows Forms
+* SQL
 * Microsoft SQL Server
-* T-SQL
-* Relational Database Design
-* SQL Queries
-* Database Management
-* Application/UI development
+* Microsoft Access
+* Visual Studio
 
----
-
-## 📦 Main Database Concepts
-
-The project demonstrates:
-
-* Table creation
-* Primary keys
-* Data types
-* Product/inventory storage
-* Relational database concepts
-* SQL Server database management
-* CRUD-oriented application design
-
----
-
-## 📂 Repository Contents
-
-The repository includes database and application resources such as:
+## Project Structure
 
 ```text
-Pharmacy-Project/
+Pharmacy-Project
 │
-├── SQL database files
-├── Application solution/files
-├── UI resources
-├── Screenshots
-├── Project documentation
-└── README.md
+├── WindowsFormsApp1
+├── WindowsFormsApp1.sln
+├── dbo.Table.sql
+├── project.accdb
+├── Project Screenshots
+└── Project Report
 ```
 
----
+## What I Learned
 
-## 🚀 Setup
+* Building desktop applications with C#
+* Developing Windows Forms interfaces
+* Connecting applications with databases
+* Designing forms for real-world business requirements
+* Working with SQL and structured data
 
-### 1. Install SQL Server
+## Future Improvements
 
-Install:
+* Improve the user interface
+* Add authentication and user roles
+* Improve database validation
+* Add reporting and analytics
+* Add inventory and sales tracking
 
-* Microsoft SQL Server
-* SQL Server Management Studio (SSMS)
-
-### 2. Create the Database
-
-Open the provided SQL scripts in SSMS.
-
-Execute the table creation scripts.
-
-Example:
-
-```sql
-CREATE TABLE [dbo].[Tbl_products]
-(
-    [productName] NVARCHAR(50) NOT NULL PRIMARY KEY,
-    [price] INT NULL,
-    [location] NVARCHAR(50) NULL,
-    [quantity] INT NULL,
-    [soled] INT NULL
-);
-```
-
-### 3. Configure the Application
-
-If using the included application layer, configure its database connection according to the SQL Server instance being used.
-
----
-
-## 🔄 Example Inventory Workflow
-
-```text
-Add Product
-     │
-     ▼
-Store Product Information
-     │
-     ▼
-Track Quantity
-     │
-     ▼
-Record Sales
-     │
-     ▼
-Update Inventory
-```
-
----
-
-## 📊 Information Managed
-
-The system can represent core product information including:
-
-* Product name
-* Price
-* Location
-* Available quantity
-* Sold quantity
-
----
-
-## 🎓 Learning Outcomes
-
-This project demonstrates practical experience with:
-
-* Database design
-* SQL Server
-* T-SQL
-* Primary keys
-* Inventory data modeling
-* Application/database integration
-* Relational database concepts
-* SQL-based data management
-
----
-
-## 🔮 Future Improvements
-
-Possible improvements include:
-
-* Foreign-key relationships
-* Separate product/category tables
-* Supplier management
-* Prescription management
-* Customer records
-* Sales transaction tables
-* Automatic stock calculations
-* Low-stock alerts
-* User authentication
-* Role-based access control
-* Transaction history
-* Database normalization
-* Stored procedures
-* Database views
-* Reporting dashboards
-
----
-
-## 👨‍💻 Author
+## Author
 
 **Youssef Mahmoud**
 
 Computer Engineering Graduate
-SQL | Python | Data Engineering | Database Systems
+Arab Academy for Science, Technology & Maritime Transport
+
